@@ -1,0 +1,45 @@
+{
+  "compilerOptions": {
+    "allowSyntheticDefaultImports": true,
+    "baseUrl": ".",
+    "declaration": false,
+    "emitDecoratorMetadata": true,
+    "importHelpers": true,
+    "experimentalDecorators": true,
+    "lib": [
+      "dom",
+      "es2015"
+    ],
+    "module": "commonjs",
+    "moduleResolution": "node",
+    "sourceMap": true,
+    "target": "es2015",
+    "skipLibCheck": true,
+    "stripInternal": true,
+    "noImplicitAny": false,
+    "types": [
+      "declarations.d",
+      "@types/node",
+      "@types/meteor",
+      "@types/meteor-roles",
+      "@types/googlemaps",
+      "@types/meteor-publish-composite"
+    ]
+  },
+  "include": [
+    "client/**/*.ts",
+    "server/**/*.ts",
+    "imports/**/*.ts"
+  ],
+  "exclude": [
+    "node_modules"
+  ],
+  "files": [
+    "declarations.d.ts"
+  ],
+  "compileOnSave": false,
+  "angularCompilerOptions": {
+    "genDir": "aot",
+    "skipMetadataEmit": true
+  }
+}
